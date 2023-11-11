@@ -39,5 +39,19 @@ func main() {
 	IntSlice = append(IntSlice, intSlice2...)
 	fmt.Println(IntSlice)
 
-	
+	//Maps it is a key value pairs
+
+	var myMap map[string]uint8 = make(map[string]uint8)
+	fmt.Println(myMap)
+
+	var myMap2 = map[string]uint8{"Adam": 23, "Sarah": 45}
+	fmt.Println(myMap2["Adam"])
+	var age, ok = myMap2["Jason"]
+	delete(myMap2,"Adam")
+	if ok {
+		fmt.Printf("The age is %v", age)
+	} else {
+		fmt.Println("Invalid Name")
+	}
+
 }
