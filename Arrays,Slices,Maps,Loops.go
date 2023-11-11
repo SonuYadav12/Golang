@@ -25,4 +25,19 @@ func main() {
 	fmt.Println(&intArr[1])
 	fmt.Println(&intArr[2])
 
+	//Slicing in Array
+
+	var IntSlice []int32 = []int32{4, 5, 6}
+	fmt.Println(IntSlice)
+	fmt.Printf("The length is %v with the capacity %v", len(IntSlice), cap(IntSlice))
+	fmt.Println()
+	IntSlice = append(IntSlice, 7)
+	fmt.Println(IntSlice)
+	fmt.Printf("The length is %v and the capacity is %v \n", len(IntSlice), cap(IntSlice))
+
+	var intSlice2 []int32 = []int32{8, 9}
+	IntSlice = append(IntSlice, intSlice2...)
+	fmt.Println(IntSlice)
+
+	
 }
