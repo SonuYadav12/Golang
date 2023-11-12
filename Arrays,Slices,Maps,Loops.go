@@ -54,4 +54,17 @@ func main() {
 		fmt.Println("Invalid Name")
 	}
 
+	//Loops
+	for name , age :=range myMap2{
+		fmt.Printf("Name %v , Value :%v\n",name,age)
+	}
+
+	for i ,v :=range intArr{
+		fmt.Print("Index: %v, Value:%v \n",i,v)
+	}
+
+	for i:=0;i<10;i++{
+		fmt.Println(i)
+	}
+
 }
