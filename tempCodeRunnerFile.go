@@ -1,4 +1,3 @@
-for i := range strSlice {
-	// 	catStr += strSlice[i]
-	// }
-	// fmt.Printf("\n%v", catStr)
+go func() {
+	// 	c <- 1
+	// }()
